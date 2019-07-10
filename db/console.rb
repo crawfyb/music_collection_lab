@@ -11,13 +11,13 @@ artist1 = Artist.new({
 
 artist1.save()
 
-# album1 = Album.new({
-#   'title' => 'Here comes the cowboy',
-#   'genre' => 'indie',
-#   'artist_id' => artist1.id
-#   })
-#
-#   album1.save()
+album1 = Album.new({
+  'title' => 'Here comes the cowboy',
+  'genre' => 'indie',
+  'artist_id' => artist1.id
+  })
+
+  album1.save()
 
 
 
