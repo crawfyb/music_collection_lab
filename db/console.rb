@@ -9,6 +9,9 @@ artist1 = Artist.new({
   'name' => "Mac DeMarco"
   })
 
+artist1.name = "Marc DeMaco"
+artist1.update()
+
 artist1.save()
 
 album1 = Album.new({
