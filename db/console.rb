@@ -9,6 +9,10 @@ artist1 = Artist.new({
   'name' => "Mac DeMarco"
   })
 
+artist2 = Artist.new({
+  'name' => "De MarcoMac"
+  })
+
 artist1.name = "Marc DeMaco"
 artist1.update()
 
