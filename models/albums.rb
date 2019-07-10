@@ -20,6 +20,12 @@ class Album
     RETURNING id"
     values = [@title, @genre, @artist_id]
     @id = SqlRunner.run(sql, values)[0]['id'].to_i
-  end 
+  end
 
+  def self.all
+    sql = "SELECT * FROM albums"
+    albums = SqlRunner.run(sql)
+    return albums.map{ |album| Album.new(album)}
+  end
+  
 end
